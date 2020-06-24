@@ -8,7 +8,7 @@ export default function App() {
   const [result, setResult] = useState(false);
 
   const callApi = async () => {
-    const data = await axios.get('http://localhost:3000/');
+    const data = await axios.get('http://localhost:5000/api/hello');
     setResult(data.data);
     setToggle(true);
   };
