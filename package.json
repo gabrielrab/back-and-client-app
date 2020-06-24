@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts":{
+    "start": "sucrase-node app.js",
+    "dev": "nodemon app.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -11,6 +15,7 @@
   },
   "devDependencies": {
     "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "nodemon": "^2.0.4",
