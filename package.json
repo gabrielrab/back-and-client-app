@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts":{
     "start": "sucrase-node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "dev:server": "cd client && yarn build && cd .. && yarn start"
   },
   "dependencies": {
     "cors": "^2.8.5",
